@@ -1,20 +1,18 @@
-$font-family: 'Source Sans Pro', sans-serif;
+$default-font-family: Arial, sans-serif;
+$font-family: if(variable-exists(font-family), $font-family, $default-font-family);
 $font-base-size: 16px;
 
-.font-norm {
+.app-font {
   font-family: $font-family;
   font-size: $font-base-size;
 }
-.font-italic {
-  @extend .font-norm;
+.italic {
   font-style: italic;
 }
-.font-semi-bold {
-  @extend .font-norm;
+.semi-bold {
   font-weight: 400;
 }
-.font-bold {
-  @extend .font-norm;
+.bold {
   font-weight: 600;
 }
 

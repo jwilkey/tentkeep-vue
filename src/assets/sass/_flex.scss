@@ -30,23 +30,3 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
-
-@media (min-width : 768px) {
-  .conditional-row {
-    display: flex;
-    flex-direction: row;
-    & > *:not(.flex-two) {
-      @extend .flex-one;
-    }
-  }
-}
-
-@media (min-width : 1024px) {
-  .row-large {
-    display: flex;
-    flex-direction: row;
-    & > *:not(.flex-two) {
-      @extend .flex-one;
-    }
-  }
-}

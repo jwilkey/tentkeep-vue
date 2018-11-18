@@ -5,12 +5,16 @@
 @import "layout";
 @import "spacing";
 
-html, body, #app {
+html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  @extend .font-norm;
+  @extend .app-font;
+  @extend .bg-base;
+  @extend .contrast;
 }
 
 p, h1, h2, h3, h4 {
@@ -36,19 +40,19 @@ hr {
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   @extend .tertiary;
-  @extend .font-italic;
+  @extend .italic;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   @extend .tertiary;
-  @extend .font-italic;
+  @extend .italic;
 }
 :-ms-input-placeholder { /* IE 10+ */
   @extend .tertiary;
-  @extend .font-italic;
+  @extend .italic;
 }
 :-moz-placeholder { /* Firefox 18- */
   @extend .tertiary;
-  @extend .font-italic;
+  @extend .italic;
 }
 
 .nowrap {
@@ -76,7 +80,6 @@ select {
   outline: none;
 }
 .input {
-  @extend .font-norm;
   box-sizing: border-box;
   width: 100%;
   background-color: transparent;

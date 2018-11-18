@@ -1,24 +1,17 @@
-@if variable-exists(base) == false {
-    $base: #fefefe;
-}
-@if variable-exists(contrast) == false {
-    $contrast: #030307;
-}
+$base-color: if(variable-exists(base-color), $base-color, #fefefe);
+$contrast-color: if(variable-exists(contrast-color), $contrast-color, #0e1111);
+$primary: if(variable-exists(primary), $primary, #031299);
+$secondary: if(variable-exists(secondary), $secondary, #aa9966);
+$tertiary: if(variable-exists(tertiary), $tertiary, #78787a);
 
-@if variable-exists(primary) == false {
-    $primary: #111144;
-}
-@if variable-exists(secondary) == false {
-    $secondary: #998822;
-}
-@if variable-exists(tertiary) == false {
-    $tertiary: #78787a;
-}
-
+.base { color: $base-color; }
+.contrast { color: $contrast-color; }
 .primary { color: $primary; }
 .secondary { color: $secondary; }
 .tertiary { color: $tertiary; }
 
+.bg-base { background-color: $base-color; }
+.bg-contrast { background-color: $contrast-color; }
 .bg-primary { background-color: $primary; }
 .bg-secondary { background-color: $secondary; }
 .bg-tertiary { background-color: $tertiary; }
