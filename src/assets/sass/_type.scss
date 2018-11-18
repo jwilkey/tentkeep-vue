@@ -1,0 +1,39 @@
+$font-family: 'Source Sans Pro', sans-serif;
+$font-base-size: 16px;
+
+.font-norm {
+  font-family: $font-family;
+  font-size: $font-base-size;
+}
+.font-italic {
+  @extend .font-norm;
+  font-style: italic;
+}
+.font-semi-bold {
+  @extend .font-norm;
+  font-weight: 400;
+}
+.font-bold {
+  @extend .font-norm;
+  font-weight: 600;
+}
+
+.font1 { font-size: $font-base-size + 1; }
+.font2 { font-size: $font-base-size + 2; }
+.font3 { font-size: $font-base-size + 3; }
+.font4 { font-size: $font-base-size + 4; }
+.font5 { font-size: $font-base-size + 5; }
+
+.font-1 { font-size: $font-base-size - 1; }
+.font-2 { font-size: $font-base-size - 2; }
+.font-3 { font-size: $font-base-size - 3; }
+.font-4 { font-size: $font-base-size - 4; }
+.font-5 { font-size: $font-base-size - 5; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.line140 { line-height: 140%; }
+.line180 { line-height: 180%; }
+.line200 { line-height: 200%; }

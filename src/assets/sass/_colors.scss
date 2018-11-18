@@ -1,0 +1,32 @@
+@if variable-exists(base) == false {
+    $base: #fefefe;
+}
+@if variable-exists(contrast) == false {
+    $contrast: #030307;
+}
+
+@if variable-exists(primary) == false {
+    $primary: #111144;
+}
+@if variable-exists(secondary) == false {
+    $secondary: #998822;
+}
+@if variable-exists(tertiary) == false {
+    $tertiary: #78787a;
+}
+
+.primary { color: $primary; }
+.secondary { color: $secondary; }
+.tertiary { color: $tertiary; }
+
+.bg-primary { background-color: $primary; }
+.bg-secondary { background-color: $secondary; }
+.bg-tertiary { background-color: $tertiary; }
+
+.opacity90 { opacity: .9; }
+.opacity80 { opacity: .8; }
+.opacity70 { opacity: .7; }
+.opacity60 { opacity: .6; }
+.opacity50 { opacity: .5; }
+.opacity40 { opacity: .4; }
+.opacity30 { opacity: .3; }
