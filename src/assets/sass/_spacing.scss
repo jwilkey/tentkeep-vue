@@ -51,3 +51,8 @@ $spacing-unit: 8px;
 .m3-left { margin-left: 3 * $spacing-unit; }
 .m4-left { margin-left: 4 * $spacing-unit; }
 .m5-left { margin-left: 5 * $spacing-unit; }
+
+.m-1-right { margin-right: -1 * $spacing-unit; }
+.m-2-right { margin-right: -2 * $spacing-unit; }
+.m-1-left { margin-left: -1 * $spacing-unit; }
+.m-2-left { margin-left: -2 * $spacing-unit; }

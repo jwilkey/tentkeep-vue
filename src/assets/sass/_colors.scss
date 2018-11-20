@@ -3,6 +3,7 @@ $contrast-color: if(variable-exists(contrast-color), $contrast-color, #0e1111);
 $primary: if(variable-exists(primary), $primary, #031299);
 $secondary: if(variable-exists(secondary), $secondary, #aa9966);
 $tertiary: if(variable-exists(tertiary), $tertiary, #78787a);
+$shadow-color: if(variable-exists(shadow-color), $shadow-color, $primary);
 
 .base { color: $base-color; }
 .contrast { color: $contrast-color; }
@@ -10,11 +11,45 @@ $tertiary: if(variable-exists(tertiary), $tertiary, #78787a);
 .secondary { color: $secondary; }
 .tertiary { color: $tertiary; }
 
+.bg-clear { background-color: transparent; }
 .bg-base { background-color: $base-color; }
 .bg-contrast { background-color: $contrast-color; }
 .bg-primary { background-color: $primary; }
 .bg-secondary { background-color: $secondary; }
 .bg-tertiary { background-color: $tertiary; }
+
+.no-border { border: none; }
+.border-base { border: solid 1px $base-color; }
+.border-contrast { border: solid 1px $contrast-color; }
+.border-primary { border: solid 1px $primary; }
+.border-secondary { border: solid 1px $secondary; }
+.border-tertiary { border: solid 1px $tertiary; }
+.border-top-base { border-top: solid 1px $base-color; }
+.border-top-contrast { border-top: solid 1px $contrast-color; }
+.border-top-primary { border-top: solid 1px $primary; }
+.border-top-secondary { border-top: solid 1px $secondary; }
+.border-top-tertiary { border-top: solid 1px $tertiary; }
+.border-right-base { border-right: solid 1px $base-color; }
+.border-right-contrast { border-right: solid 1px $contrast-color; }
+.border-right-primary { border-right: solid 1px $primary; }
+.border-right-secondary { border-right: solid 1px $secondary; }
+.border-right-tertiary { border-right: solid 1px $tertiary; }
+.border-bottom-base { border-bottom: solid 1px $base-color; }
+.border-bottom-contrast { border-bottom: solid 1px $contrast-color; }
+.border-bottom-primary { border-bottom: solid 1px $primary; }
+.border-bottom-secondary { border-bottom: solid 1px $secondary; }
+.border-bottom-tertiary { border-bottom: solid 1px $tertiary; }
+.border-left-base { border-left: solid 1px $base-color; }
+.border-left-contrast { border-left: solid 1px $contrast-color; }
+.border-left-primary { border-left: solid 1px $primary; }
+.border-left-secondary { border-left: solid 1px $secondary; }
+.border-left-tertiary { border-left: solid 1px $tertiary; }
+
+.shadow { box-shadow: 0 2px 5px $shadow-color; }
+.shadow-top { box-shadow: 0 -2px 15px $shadow-color; }
+.shadow-bottom { box-shadow: 0 2px 15px $shadow-color; }
+.shadow-inset { box-shadow: inset 0 2px 5px $shadow-color; }
+.text-shadow { text-shadow: 1px 0px 3px $shadow-color; }
 
 .opacity90 { opacity: .9; }
 .opacity80 { opacity: .8; }

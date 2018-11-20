@@ -2,6 +2,7 @@
 @import "flex";
 @import "type";
 @import "animations";
+@import "transitions";
 @import "layout";
 @import "spacing";
 
@@ -39,19 +40,19 @@ hr {
 // }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  @extend .tertiary;
+  color: $tertiary;
   @extend .italic;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  @extend .tertiary;
+  color: $tertiary;
   @extend .italic;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  @extend .tertiary;
+  color: $tertiary;
   @extend .italic;
 }
 :-moz-placeholder { /* Firefox 18- */
-  @extend .tertiary;
+  color: $tertiary;
   @extend .italic;
 }
 
@@ -82,11 +83,9 @@ select {
 .input {
   box-sizing: border-box;
   width: 100%;
-  background-color: transparent;
-  border: none;
   outline: none;
-  padding: 8px 15px;
   border-radius: 0px;
+  @extend .p2;
 }
 .spinner {
   min-width: 20px;
@@ -99,7 +98,10 @@ select {
 }
 .pointer { cursor: pointer; }
 
-.rounded { border-radius: 5px; }
+$rounded-unit: 5px;
+.rounded { border-radius: $rounded-unit; }
+.rounded2 { border-radius: $rounded-unit * 2; }
+.rounded3 { border-radius: $rounded-unit * 3; }
 .circle { border-radius: 100%; }
 
 .noscroll {

@@ -2,6 +2,10 @@
 .vthird { height: 33.33%; }
 .h-fill { width: 100%; }
 .hthird { width: 33.33%; }
+.v-fill-min { min-height: 100%; }
+.h-fill-min { min-width: 100%; }
+.v-fill-max { max-height: 100%; }
+.h-fill-max { max-width: 100%; }
 
 .inline { display: inline-block; }
 .relative { position: relative; }
@@ -15,6 +19,7 @@
 }
 
 $z-offset: 100;
+.z-2 { z-index: -2 * $z-offset; }
 .z-1 { z-index: -$z-offset; }
 .z0 { z-index: 0; }
 .z1 { z-index: 1 * $z-offset; }
@@ -28,6 +33,10 @@ $z-offset: 100;
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+.fixed.center {
+  left: 50%;
+  right: 50%;
 }
 
 .bottompad {
