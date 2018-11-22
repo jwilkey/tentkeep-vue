@@ -5,11 +5,14 @@ $secondary: if(variable-exists(secondary), $secondary, #aa9966);
 $tertiary: if(variable-exists(tertiary), $tertiary, #78787a);
 $shadow-color: if(variable-exists(shadow-color), $shadow-color, $primary);
 
+$error: if(variable-exists(error), $error, #ff0000);
+
 .base { color: $base-color; }
 .contrast { color: $contrast-color; }
 .primary { color: $primary; }
 .secondary { color: $secondary; }
 .tertiary { color: $tertiary; }
+.error { color: $error; }
 
 .bg-clear { background-color: transparent; }
 .bg-base { background-color: $base-color; }
@@ -17,6 +20,7 @@ $shadow-color: if(variable-exists(shadow-color), $shadow-color, $primary);
 .bg-primary { background-color: $primary; }
 .bg-secondary { background-color: $secondary; }
 .bg-tertiary { background-color: $tertiary; }
+.bg-error { background-color: $error; }
 
 .no-border { border: none; }
 .border-base { border: solid 1px $base-color; }
