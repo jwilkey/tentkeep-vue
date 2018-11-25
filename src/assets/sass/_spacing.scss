@@ -1,25 +1,30 @@
 $spacing-unit: 8px;
 
+.p0 { padding: 0; }
 .p1 { padding: 1 * $spacing-unit; }
 .p2 { padding: 2 * $spacing-unit; }
 .p3 { padding: 3 * $spacing-unit; }
 .p4 { padding: 4 * $spacing-unit; }
 .p5 { padding: 5 * $spacing-unit; }
+.p0-top { padding-top: 0; }
 .p1-top { padding-top: 1 * $spacing-unit; }
 .p2-top { padding-top: 2 * $spacing-unit; }
 .p3-top { padding-top: 3 * $spacing-unit; }
 .p4-top { padding-top: 4 * $spacing-unit; }
 .p5-top { padding-top: 5 * $spacing-unit; }
+.p0-right { padding-right: 0; }
 .p1-right { padding-right: 1 * $spacing-unit; }
 .p2-right { padding-right: 2 * $spacing-unit; }
 .p3-right { padding-right: 3 * $spacing-unit; }
 .p4-right { padding-right: 4 * $spacing-unit; }
 .p5-right { padding-right: 5 * $spacing-unit; }
+.p0-bottom { padding-bottom: 0; }
 .p1-bottom { padding-bottom: 1 * $spacing-unit; }
 .p2-bottom { padding-bottom: 2 * $spacing-unit; }
 .p3-bottom { padding-bottom: 3 * $spacing-unit; }
 .p4-bottom { padding-bottom: 4 * $spacing-unit; }
 .p5-bottom { padding-bottom: 5 * $spacing-unit; }
+.p0-left { padding-left: 0; }
 .p1-left { padding-left: 1 * $spacing-unit; }
 .p2-left { padding-left: 2 * $spacing-unit; }
 .p3-left { padding-left: 3 * $spacing-unit; }

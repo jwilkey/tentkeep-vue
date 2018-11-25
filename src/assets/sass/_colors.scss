@@ -1,4 +1,5 @@
 $base-color: if(variable-exists(base-color), $base-color, #fefefe);
+$base-color2: lighten($base-color, 12%);
 $contrast-color: if(variable-exists(contrast-color), $contrast-color, #0e1111);
 $primary: if(variable-exists(primary), $primary, #031299);
 $secondary: if(variable-exists(secondary), $secondary, #aa9966);
@@ -8,24 +9,30 @@ $shadow-color: if(variable-exists(shadow-color), $shadow-color, $primary);
 $error: if(variable-exists(error), $error, #ff0000);
 
 .base { color: $base-color; }
+.base2 { color: $base-color2; }
 .contrast { color: $contrast-color; }
 .primary { color: $primary; }
+.primary2 { color: lighten($primary, 10%); }
 .secondary { color: $secondary; }
 .tertiary { color: $tertiary; }
 .error { color: $error; }
 
 .bg-clear { background-color: transparent; }
 .bg-base { background-color: $base-color; }
+.bg-base2 { background-color: $base-color2; }
 .bg-contrast { background-color: $contrast-color; }
 .bg-primary { background-color: $primary; }
+.bg-primary2 { background-color: lighten($primary, 10%); }
 .bg-secondary { background-color: $secondary; }
 .bg-tertiary { background-color: $tertiary; }
 .bg-error { background-color: $error; }
 
 .no-border { border: none; }
 .border-base { border: solid 1px $base-color; }
+.border-base2 { border: solid 1px $base-color2; }
 .border-contrast { border: solid 1px $contrast-color; }
 .border-primary { border: solid 1px $primary; }
+.border-primary2 { border: solid 1px lighten($primary, 10%); }
 .border-secondary { border: solid 1px $secondary; }
 .border-tertiary { border: solid 1px $tertiary; }
 .border-top-base { border-top: solid 1px $base-color; }
@@ -34,16 +41,19 @@ $error: if(variable-exists(error), $error, #ff0000);
 .border-top-secondary { border-top: solid 1px $secondary; }
 .border-top-tertiary { border-top: solid 1px $tertiary; }
 .border-right-base { border-right: solid 1px $base-color; }
+.border-right-base2 { border-right: solid 1px $base-color2; }
 .border-right-contrast { border-right: solid 1px $contrast-color; }
 .border-right-primary { border-right: solid 1px $primary; }
 .border-right-secondary { border-right: solid 1px $secondary; }
 .border-right-tertiary { border-right: solid 1px $tertiary; }
 .border-bottom-base { border-bottom: solid 1px $base-color; }
+.border-bottom-base2 { border-bottom: solid 1px $base-color2; }
 .border-bottom-contrast { border-bottom: solid 1px $contrast-color; }
 .border-bottom-primary { border-bottom: solid 1px $primary; }
 .border-bottom-secondary { border-bottom: solid 1px $secondary; }
 .border-bottom-tertiary { border-bottom: solid 1px $tertiary; }
 .border-left-base { border-left: solid 1px $base-color; }
+.border-left-base2 { border-left: solid 1px $base-color2; }
 .border-left-contrast { border-left: solid 1px $contrast-color; }
 .border-left-primary { border-left: solid 1px $primary; }
 .border-left-secondary { border-left: solid 1px $secondary; }
