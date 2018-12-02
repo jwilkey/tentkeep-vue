@@ -60,7 +60,7 @@ $error: if(variable-exists(error), $error, #ff0000);
 .border-left-tertiary { border-left: solid 1px $tertiary; }
 
 .shadow { box-shadow: 0 2px 5px $shadow-color; }
-.shadow-top { box-shadow: 0 -2px 15px $shadow-color; }
+.shadow-top { box-shadow: 0 -5px 20px $shadow-color; }
 .shadow-bottom { box-shadow: 0 2px 15px $shadow-color; }
 .shadow-inset { box-shadow: inset 0 2px 5px $shadow-color; }
 .text-shadow { text-shadow: 1px 0px 3px $shadow-color; }

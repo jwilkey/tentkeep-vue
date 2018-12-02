@@ -69,6 +69,22 @@
       filter: brightness(1);
     }
 }
+.fade-in-out {
+  animation-name: fade-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes fade-in-out {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
 
 .slide-from-right {
   animation-name: slide-from-right;
