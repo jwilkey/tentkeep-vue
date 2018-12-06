@@ -41,6 +41,7 @@ hr {
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: $tertiary;
+  @extend .font1;
   @extend .italic;
 }
 ::-moz-placeholder { /* Firefox 19+ */
@@ -72,6 +73,11 @@ hr {
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+  }
+  &.round {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
   }
 }
 select {
