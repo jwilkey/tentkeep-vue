@@ -2,6 +2,10 @@
 .fade-leave-active { height: 0px; }
 .fade-enter, .fade-leave-to { opacity: 0 }
 
+.fade-in-enter-active { transition: opacity .5s }
+.fade-in-leave-active { display: none; }
+.fade-in-enter { opacity: 0 }
+
 .appear-enter-active, .appear-leave-active { transition: transform .5s }
 .appear-enter, .appear-leave-to { transform: scale(0) }
 

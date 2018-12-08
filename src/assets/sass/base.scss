@@ -63,10 +63,10 @@ hr {
 
 // VIEW ITEMS
 .button {
+  @extend .p2;
   border: none;
   border-radius: 4px;
   font-size: 16px;
-  padding: 10px 15px;
   border-radius: 30px;
   cursor: pointer;
   outline: none;
