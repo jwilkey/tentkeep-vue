@@ -64,6 +64,8 @@ hr {
 // VIEW ITEMS
 .button {
   @extend .p2;
+  @extend .p3-left;
+  @extend .p3-right;
   border: none;
   border-radius: 4px;
   font-size: 16px;
