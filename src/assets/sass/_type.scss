@@ -19,6 +19,10 @@ $font-base-size: 16px;
   font-weight: 600;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .font1 { font-size: $font-base-size + 1; }
 .font2 { font-size: $font-base-size + 2; }
 .font3 { font-size: $font-base-size + 3; }
