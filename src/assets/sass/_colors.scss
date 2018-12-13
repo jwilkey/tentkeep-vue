@@ -4,6 +4,7 @@ $contrast-color: if(variable-exists(contrast-color), $contrast-color, #0e1111);
 $primary: if(variable-exists(primary), $primary, #031299);
 $secondary: if(variable-exists(secondary), $secondary, #aa9966);
 $tertiary: if(variable-exists(tertiary), $tertiary, #78787a);
+$tertiary2: lighten($tertiary, 12%);
 $shadow-color: if(variable-exists(shadow-color), $shadow-color, $primary);
 
 $error: if(variable-exists(error), $error, #ff0000);
@@ -15,6 +16,7 @@ $error: if(variable-exists(error), $error, #ff0000);
 .primary2 { color: lighten($primary, 10%); }
 .secondary { color: $secondary; }
 .tertiary { color: $tertiary; }
+.tertiary2 { color: $tertiary2; }
 .error { color: $error; }
 
 .bg-clear { background-color: transparent; }
