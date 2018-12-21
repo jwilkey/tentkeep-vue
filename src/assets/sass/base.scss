@@ -122,6 +122,15 @@ $rounded-unit: 5px;
   overflow-x: scroll;
 }
 
+.hidden {
+  display: none;
+}
+.hidden-input {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
 .blur {
   filter: blur(4px);
 }
