@@ -1,5 +1,5 @@
 $base-color: if(variable-exists(base-color), $base-color, #fefefe);
-$base-color2: lighten($base-color, 12%);
+$base-color2: if(variable-exists(base-color2), $base-color2, lighten($base-color, 12%));
 $contrast-color: if(variable-exists(contrast-color), $contrast-color, #0e1111);
 $primary: if(variable-exists(primary), $primary, #031299);
 $secondary: if(variable-exists(secondary), $secondary, #aa9966);
