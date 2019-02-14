@@ -126,8 +126,10 @@ $rounded-unit: 5px;
   display: none;
 }
 .hidden-input {
+  position: fixed;
+  top: -100%;
   opacity: 0;
-  width: 0;
+  max-width: 0;
   overflow: hidden;
 }
 
