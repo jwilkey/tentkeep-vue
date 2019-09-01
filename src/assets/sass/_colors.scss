@@ -2,9 +2,14 @@ $base-color: if(variable-exists(base-color), $base-color, #fefefe);
 $base-color2: if(variable-exists(base-color2), $base-color2, lighten($base-color, 12%));
 $contrast-color: if(variable-exists(contrast-color), $contrast-color, #0e1111);
 $primary: if(variable-exists(primary), $primary, #031299);
+$primary2: if(variable-exists($primary2), $primary2, lighten($primary, 10%));
+$primary3: if(variable-exists($primary3), $primary3, lighten($primary, 22%));
 $secondary: if(variable-exists(secondary), $secondary, #aa9966);
+$secondary2: if(variable-exists($secondary2), $secondary2, lighten($secondary, 10%));
+$secondary3: if(variable-exists($secondary3), $secondary3, lighten($secondary, 22%));
 $tertiary: if(variable-exists(tertiary), $tertiary, #78787a);
-$tertiary2: lighten($tertiary, 12%);
+$tertiary3: if(variable-exists($tertiary2), $tertiary2, lighten($tertiary, 10%));
+$tertiary3: if(variable-exists($tertiary3), $tertiary3, lighten($tertiary, 22%));
 $shadow-color: if(variable-exists(shadow-color), $shadow-color, $primary);
 
 $error: if(variable-exists(error), $error, #ff0000);
@@ -13,10 +18,14 @@ $error: if(variable-exists(error), $error, #ff0000);
 .base2 { color: $base-color2; }
 .contrast { color: $contrast-color; }
 .primary { color: $primary; }
-.primary2 { color: lighten($primary, 10%); }
+.primary2 { color: $primary2; }
+.primary3 { color: $primary3; }
 .secondary { color: $secondary; }
+.secondary2 { color: $secondary2; }
+.secondary3 { color: $secondary3; }
 .tertiary { color: $tertiary; }
 .tertiary2 { color: $tertiary2; }
+.tertiary3 { color: $tertiary3; }
 .error { color: $error; }
 
 .bg-clear { background-color: transparent; }
@@ -24,9 +33,14 @@ $error: if(variable-exists(error), $error, #ff0000);
 .bg-base2 { background-color: $base-color2; }
 .bg-contrast { background-color: $contrast-color; }
 .bg-primary { background-color: $primary; }
-.bg-primary2 { background-color: lighten($primary, 10%); }
+.bg-primary2 { background-color: $primary2; }
+.bg-primary3 { background-color: $primary3; }
 .bg-secondary { background-color: $secondary; }
+.bg-secondary2 { background-color: $secondary2; }
+.bg-secondary3 { background-color: $secondary3; }
 .bg-tertiary { background-color: $tertiary; }
+.bg-tertiary2 { background-color: $tertiary2; }
+.bg-tertiary3 { background-color: $tertiary3; }
 .bg-error { background-color: $error; }
 
 .no-border { border: none; }
@@ -34,9 +48,14 @@ $error: if(variable-exists(error), $error, #ff0000);
 .border-base2 { border: solid 1px $base-color2; }
 .border-contrast { border: solid 1px $contrast-color; }
 .border-primary { border: solid 1px $primary; }
-.border-primary2 { border: solid 1px lighten($primary, 10%); }
+.border-primary2 { border: solid 1px $primary2; }
+.border-primary3 { border: solid 1px $primary3; }
 .border-secondary { border: solid 1px $secondary; }
+.border-secondary2 { border: solid 1px $secondary2; }
+.border-secondary3 { border: solid 1px $secondary3; }
 .border-tertiary { border: solid 1px $tertiary; }
+.border-tertiary2 { border: solid 1px $tertiary2; }
+.border-tertiary3 { border: solid 1px $tertiary3; }
 .border-top-base { border-top: solid 1px $base-color; }
 .border-top-contrast { border-top: solid 1px $contrast-color; }
 .border-top-primary { border-top: solid 1px $primary; }
@@ -74,3 +93,6 @@ $error: if(variable-exists(error), $error, #ff0000);
 .opacity50 { opacity: .5; }
 .opacity40 { opacity: .4; }
 .opacity30 { opacity: .3; }
+.opacity20 { opacity: .2; }
+.opacity10 { opacity: .1; }
+.opacity0 { opacity: 0; }
